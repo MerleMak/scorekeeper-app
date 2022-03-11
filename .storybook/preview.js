@@ -1,4 +1,6 @@
-import "../src/index.css";
+import { MemoryRouter } from "react-router-dom";
+import GlobalStyles from "../src/GlobalStyles.js";
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -8,3 +10,18 @@ export const parameters = {
     },
   },
 };
+
+export const decorators = [
+  (Story) => (
+    <>
+      <GlobalStyles />
+      <Story />
+    </>
+  ),
+
+  (Story) => (
+    <MemoryRouter>
+      <Story />
+    </MemoryRouter>
+  ),
+];
