@@ -2,19 +2,20 @@ import styled from "styled-components";
 
 export default function GameInput({
   labelText,
-  gameName,
   placeholder,
+  name,
+  value,
   onChange,
   required,
 }) {
   return (
     <>
-      <Label htmlFor={gameName}>{labelText}</Label>
+      <Label htmlFor={name}>{labelText}</Label>
       <InputStyled
-        id={gameName}
-        value={gameName}
+        id={name}
         placeholder={placeholder}
         type="text"
+        value={value}
         onChange={onChange}
         required={required}
       />

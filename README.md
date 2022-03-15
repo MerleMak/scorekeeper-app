@@ -1,3 +1,11 @@
+# Colors used in styling:
+
+- #DDE392 (lime green)
+- #AFBE8F (light green)
+- #7D8570 (greygreen)
+- #646F58 (khaki green)
+- #504B3A (dark olive green)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
